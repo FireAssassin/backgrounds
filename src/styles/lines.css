@@ -1,0 +1,41 @@
+.lines {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -10;
+}
+
+.lines > .wrapper {
+    width: 2.5%;
+    margin: 0px 10px 0px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation: hue 2s alternate-reverse infinite;
+}
+
+.lines > .wrapper > .line {
+    width: 100%;
+    border-radius: 1rem;
+    z-index: 1;
+    animation: shrinkToCenter 2s alternate infinite;
+}
+
+@keyframes shrinkToCenter {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 10%;
+    }
+}
+
+@keyframes hue {
+    from {
+        filter: hue-rotate(0deg);
+    }
+    to {
+        filter: hue-rotate(360deg);
+    }
+}

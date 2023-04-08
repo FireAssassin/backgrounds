@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import "./styles/app.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div className="Backgrounds">
+            <div onClick={() => {window.location = `./fireblocks?objects=20`}}>Fire blocks</div>
+            <div onClick={() => {window.location = `./rgbblocks?objects=20`}}>RGB blocks</div>
+            <div onClick={() => {window.location = `./lines?objects=10`}}>Lines</div>
+            <div onClick={() => {window.location = `./grid`}}>Grid</div>
+            <div onClick={() => {window.location = `./tree`}}>Tree</div>
+        </div>
+    );
 }
 
 export default App;

@@ -1,0 +1,17 @@
+.logObject {
+    position: absolute;
+    aspect-ratio: 1;
+    height: 5%;
+    opacity: 0.5;
+    transform: translate(-50%, 0);
+    z-index: -10;
+}
+
+.leavesObject {
+    position: absolute;
+    aspect-ratio: 1;
+    height: 5%;
+    opacity: 0.8;
+    z-index: 5;
+    /* transform: translate(-50%, 0); */
+}
